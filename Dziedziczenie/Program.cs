@@ -1,4 +1,5 @@
-﻿using Dziedziczenie.KlasaStatyczna;
+﻿using Dziedziczenie.KlasaAbstrakcyjna;
+using Dziedziczenie.KlasaStatyczna;
 using Dziedziczenie.Pojazdy;
 using System;
 using System.Collections.Generic;
@@ -36,6 +37,8 @@ namespace Dziedziczenie
 
             Console.WriteLine("Nazwa hosta : {0}", Utils.hostname );
             Console.WriteLine("Wart. maks = {0}", Utils.GetMaxValue(-10,10,20,30,0,-4) );
+
+            AbstractProduct ap = new AbstractProduct("Mleko", 2.99);
 
             Console.ReadKey();
         }
